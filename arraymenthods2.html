@@ -1,0 +1,54 @@
+<html>
+<head>
+</head>
+<body>
+
+<script>
+var heroes=["ironman","spiderman","dr.strange","wanda"];
+heroes.splice(2,0,"black panther");
+document.write(heroes);
+</script>
+
+<br><br><br>
+
+<script>
+var heroes=["ironman","spiderman","dr.strange","wanda","vision"];
+document.write("Array before inserting"+heroes);
+var marvel=heroes.slice(3);
+document.write("<br>marvel heroes:"+marvel);
+</script>
+
+<br><br><br>
+
+
+<script>
+var marvel=["ironman","spiderman","dr.strange","wanda","vision"];
+var dc=["superman","batman","flash"];
+var heroes=marvel.concat(dc);
+document.write("<br>heroes  "+heroes);
+</script>
+
+<br><br><br>
+
+
+<script>
+var marvel=["ironman","spiderman","dr.strange","wanda","vision"];
+var dc=["superman","batman","flash"];
+var heroes=marvel.concat(dc);
+document.write("<br>heroes  "+heroes.join('*'));
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
